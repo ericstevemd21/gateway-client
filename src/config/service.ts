@@ -1,0 +1,1 @@
+export const prodcuto_servicio ='prodcuto_servicio';
