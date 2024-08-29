@@ -1,12 +1,12 @@
 import { Module } from '@nestjs/common';
-import { ProductoService } from './producto.service';
+
 import { ProductoController } from './producto.controller';
 import { ClientsModule, Transport } from '@nestjs/microservices';
 import { envs, prodcuto_servicio } from 'src/config';
 
 @Module({
   controllers: [ProductoController],
-  providers: [ProductoService],
+  providers: [],
   imports: [
     ClientsModule.register([
       { name: prodcuto_servicio,
